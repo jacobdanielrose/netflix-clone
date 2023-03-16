@@ -30,12 +30,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <h1 className={"text-4xl text-red-500"}>Netflix Clone</h1>
-      <p className='text-white'>Logged in as: {user?.email}</p>
-      <button className='h-10 w-40 bg-white'
-        onClick={() => signOut()}>
-        Logout
-      </button>
     </>
   )
 }
