@@ -32,8 +32,9 @@ export default function Watch() {
                 </p>
             </nav>
             <video
+                autoPlay controls
                 className="h-full w-full"
-                src={data?.videoUrl}></video>
+                src={data?.videoUrl} />
         </div>
     )
 
