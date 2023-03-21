@@ -21,7 +21,7 @@ export default function FavoriteButton({
     const toggleFavorites = useCallback(async () => {
         let response
 
-        if (!isFavorite) {
+        if (isFavorite) {
             response = await axios.delete('/api/favorite', { data: { movieId } })
         } else {
             response = await axios.post('/api/favorite', { movieId })
